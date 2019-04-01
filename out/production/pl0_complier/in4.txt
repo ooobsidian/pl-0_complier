@@ -1,0 +1,22 @@
+var a,b,c;
+procedure sort;
+begin
+    read(a,b,c);
+    var t;
+    if a>b then
+        t:=a;
+        a:=b;
+        b:=t;
+    if a>c then
+        t:=a;
+        a:=c;
+        c:=t;
+    if b>c then
+        t:=b;
+        b:=c;
+        c:=t;
+    write(a,b,c);
+end;
+begin
+    call sort;
+end.

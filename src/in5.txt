@@ -1,0 +1,26 @@
+var a,b,c;
+procedure check;
+begin
+    if a+b<c then
+        write('无法构成')
+    if a==b then
+        if b==c then
+            write('等边三角形')
+        else
+            write('等腰三角形')
+    else
+        if b==c then
+            write('等腰三角形')
+        if a==c then
+            write('等腰三角形')
+    if a*a+b*b==c*c
+        write('直角三角形')
+    if a*a+c*c==b*b
+        write('直角三角形')
+    if c*c+b*b==a*c
+        write('直角三角形')
+end;
+begin
+    read(a,b,c);
+    call check;
+end.
