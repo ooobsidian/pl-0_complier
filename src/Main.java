@@ -1,6 +1,4 @@
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
+import java.io.*;
 import java.util.HashSet;
 import java.util.Iterator;
 
@@ -41,8 +39,7 @@ public class Main {
         return num;
     }
 
-    public static void countIdentifier(String filePath) {
-        System.out.println("============Start============");
+    public static void countIdentifier(String filePath,int index) {
         String[] reserved_word = {"begin", "call", "const", "do", "end", "if", "odd", "procedure", "read", "then", "var", "while", "write"};
         String[] operate_word = {":=", "+", "-", "*", "/", "=", "#", "<", "<=", ">", ">="};
         String[] limited_word = {"(", ")", ",", ";", ".","'","\""};
@@ -86,21 +83,38 @@ public class Main {
         }
 
         //输出结果
+        BufferedWriter out = null;
+        try {
+            out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("out" + index + ".txt", true)));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
         for (String str : result) {
             int num = countStr(buffer, str);
-            System.out.println("(" + str + ": " + num + ")");
+            try {
+                System.out.println("(" + str + ": " + num + ")");
+                out.write("(" + str + ": " + num + ")"+"\r\n");
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }
-        System.out.println("============End============");
+        try {
+            out.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public static void main(String... args) {
-        String filePath1 = "/home/obsidian/Desktop/source/pl0_complier/src/in1.txt";
-        String filePath2 = "/home/obsidian/Desktop/source/pl0_complier/src/in2.txt";
-        String filePath3 = "/home/obsidian/Desktop/source/pl0_complier/src/in3.txt";
-        String filePath4 = "/home/obsidian/Desktop/source/pl0_complier/src/in4.txt";
-        countIdentifier(filePath1);
-        countIdentifier(filePath2);
-        countIdentifier(filePath3);
-        countIdentifier(filePath4);
+        String filePath1 = "in1.txt";
+        String filePath2 = "in2.txt";
+        String filePath3 = "in3.txt";
+        String filePath4 = "in4.txt";
+        String filePath5 = "in5.txt";
+        countIdentifier(filePath1,1);
+        countIdentifier(filePath2,2);
+        countIdentifier(filePath3,3);
+        countIdentifier(filePath4,4);
+        countIdentifier(filePath5,5);
     }
 }
