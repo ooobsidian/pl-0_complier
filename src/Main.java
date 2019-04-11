@@ -1,120 +1,111 @@
 import java.io.*;
-import java.util.HashSet;
-import java.util.Iterator;
+import java.nio.charset.StandardCharsets;
+import java.util.*;
 
 public class Main {
-    //从文件中读pl_0程序
-    public static String readLine(String fileName) {
-        File file = new File(fileName);
-        BufferedReader reader = null;
-        String buffer = "";
+
+    private List<String> countReservedWord() throws IOException {
+        List<String> res = new LinkedList<>();
+        InputStreamReader inputStreamReader;
         try {
-            reader = new BufferedReader(new FileReader(file));
-            String tempString;
-            while ((tempString = reader.readLine()) != null) {
-                buffer += tempString;
-            }
-            reader.close();
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            if (reader != null) {
-                try {
-                    reader.close();
-                } catch (Exception e) {
-                    e.printStackTrace();
+            inputStreamReader = new InputStreamReader(new FileInputStream("in1.txt"), StandardCharsets.UTF_8);
+        } catch (IOException e) {
+            System.out.println("打开文件失败，错误信息为" + e.toString());
+            return res;
+        }
+        BufferedReader buff = new BufferedReader(inputStreamReader);
+        // line是从文件读取进来的一行
+        // nowWord是读取的每行中的一个操作符或者一个单词
+        String line, nowWord = "";
+        // 标记目前统计的是什么符号类型
+        int flag = -1;
+        while ((line = buff.readLine()) != null) {
+            // 全部小写
+            line = line.toLowerCase();
+            // 拿到长度
+            int len = line.length();
+            // 循环统计
+            for (int i = 0; i < len; i++) {
+                char c = line.charAt(i);
+                // 当前的nowWord是单词开始的
+                if ((c >= 'a' && c <= 'z') || (c >= '0' && c <= '9') || c == '_') {
+                    if (flag != -1 && flag != 1) {
+                        res.add(nowWord);
+                        nowWord = "";
+                    }
+                    nowWord += c;
+                    flag = 1;
+                    // 当前的nowWord碰到了空格或者换行
+                } else if (c == ' ' || c == '\n') {
+                    flag = 0;
+                    // 当前的nowWord碰到了+ - * / ; >= <=这种运算符
+                } else {
+                    if (flag != -1 && flag != 2 || c == ';') {
+                        res.add(nowWord);
+                        nowWord = "";
+                    }
+                    nowWord += c;
+                    flag = 2;
                 }
             }
         }
-        return buffer;
+        buff.close();
+        inputStreamReader.close();
+        return res;
     }
 
-    //找出子串在主串中出现了几次
-    public static int countStr(String str, String sToFind) {
-        int num = 0;
-        while (str.contains(sToFind)) {
-            str = str.substring(str.indexOf(sToFind) + sToFind.length());
-            num++;
-        }
-        return num;
+    /*
+        只要判断首位是不是数字，因为在countReservedWord函数中
+        已经保证了输入的变量一定是字母数组下划线才能合成一个string
+        所以首位是数字一定是数字串
+     */
+    boolean isNumber(String str) {
+        return str.charAt(0) >= '0' && str.charAt(0) <= '9';
     }
 
-    public static void countIdentifier(String filePath,int index) {
-        String[] reserved_word = {"begin", "call", "const", "do", "end", "if", "odd", "procedure", "read", "then", "var", "while", "write"};
-        String[] operate_word = {":=", "+", "-", "*", "/", "=", "#", "<", "<=", ">", ">="};
-        String[] limited_word = {"(", ")", ",", ";", ".","'","\""};
-        String buffer = readLine(filePath);
-        HashSet<String> result = new HashSet<>();
-
-        //对读出来的程序段进行字符串处理
-        buffer.replace("\n", " ");
-        buffer = buffer.toLowerCase();
-        for (int i = 0; i < reserved_word.length; i++) {
-            buffer = buffer.replace(reserved_word[i], " ");
-        }
-        for (int i = 0; i < operate_word.length; i++) {
-            buffer = buffer.replace(operate_word[i], " ");
-        }
-        for (int i = 0; i < limited_word.length; i++) {
-            buffer = buffer.replace(limited_word[i], " ");
-        }
-        String tmp = "";
-        //四种情况
-        for (int i = 0; i < buffer.length() - 1; i++) {
-            if (buffer.charAt(i) != ' ' && buffer.charAt(i + 1) != ' ') {
-                tmp += buffer.charAt(i);
-            } else if (buffer.charAt(i) != ' ' && buffer.charAt(i + 1) == ' ') {
-                tmp += buffer.charAt(i);
-                result.add(tmp);
-                tmp = "";
-            } else if (buffer.charAt(i) == ' ' && buffer.charAt(i + 1) == ' ') {
-                continue;
-            } else if (buffer.charAt(i) == ' ' && buffer.charAt(i + 1) != ' ') {
-                continue;
-            }
-        }
-        //遍历Set集合
-        Iterator<String> iterator = result.iterator();
-        while (iterator.hasNext()) {
-            String str = iterator.next();
-            if (str.charAt(0) >= '0' && str.charAt(0) <= '9') {
-                iterator.remove();
-            }
-        }
-
-        //输出结果
-        BufferedWriter out = null;
-        try {
-            out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("out" + index + ".txt", true)));
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-        for (String str : result) {
-            int num = countStr(buffer, str);
-            try {
-                System.out.println("(" + str + ": " + num + ")");
-                out.write("(" + str + ": " + num + ")"+"\r\n");
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
-        try {
-            out.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    /*
+        判断是否是变量名或者是数字，因为在countReservedWord函数中
+        已经保证了输入的变量一定是字母数组下划线才能合成一个string
+        所以只要检测到首位是_或者字母那么一定是变量
+     */
+    boolean isVariable(String str) {
+        // 特判变量或者函数名的首位不能是数字
+        return str.charAt(0) >= 'a' && str.charAt(0) <= 'z'
+                || str.charAt(0) == '_';
     }
 
-    public static void main(String... args) {
-        String filePath1 = "in1.txt";
-        String filePath2 = "in2.txt";
-        String filePath3 = "in3.txt";
-        String filePath4 = "in4.txt";
-        String filePath5 = "in5.txt";
-        countIdentifier(filePath1,1);
-        countIdentifier(filePath2,2);
-        countIdentifier(filePath3,3);
-        countIdentifier(filePath4,4);
-        countIdentifier(filePath5,5);
+    public static void main(String[] args) throws IOException, Exception {
+
+        // 所有的保留字或运算符对应的编码
+        HashMap<String, String > encode = new HashMap<String, String>(){{
+            put("begin","beginsym"); put("call","callsym"); put("const","constsym");
+            put("do", "dosym"); put("end", "endsym");
+            put("if","ifsym"); put("odd","oddsym"); put("procedure","proceduresym");
+            put("read","readsym"); put("then","thensym"); put("var","varsym");
+            put("while","whilesym"); put("write","writesym"); put("+","plus");
+            put("-","minus"); put("*","times"); put("/","slash");
+            put("=","eql"); put("#","neq"); put("<","lss");
+            put("<=","leq"); put(">","gtr"); put(">=","geq");
+            put(":=","becomes"); put("(","lparen"); put(")","rparen");
+            put(",","comma"); put(";","semicolon"); put(".","period");
+        }};
+
+        Main o = new Main();
+        List<String> tmp = o.countReservedWord();
+        for(String str : tmp) {
+            if(encode.containsKey(str)) {
+                // 仅供实验二参考
+                System.out.printf("(" + "%-10s", encode.get(str) + ",");
+            } else {
+                if (o.isNumber(str)) {
+                    System.out.print("(number,   ");
+                } else if(o.isVariable(str)) {
+                    System.out.print("(ident,    ");
+                } else {
+                    throw new Exception("格式错误:" + str);
+                }
+            }
+            System.out.printf("%10s", str + ")\n");
+        }
     }
 }
