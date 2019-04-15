@@ -1,14 +1,16 @@
+package Lexical;
+
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.util.*;
 
 public class Main {
 
-    private List<String> countReservedWord() throws IOException {
+    private List<String> countReservedWord(String filePath) throws IOException {
         List<String> res = new LinkedList<>();
         InputStreamReader inputStreamReader;
         try {
-            inputStreamReader = new InputStreamReader(new FileInputStream("in1.txt"), StandardCharsets.UTF_8);
+            inputStreamReader = new InputStreamReader(new FileInputStream(filePath), StandardCharsets.UTF_8);
         } catch (IOException e) {
             System.out.println("打开文件失败，错误信息为" + e.toString());
             return res;
@@ -18,14 +20,17 @@ public class Main {
         // nowWord是读取的每行中的一个操作符或者一个单词
         String line, nowWord = "";
         // 标记目前统计的是什么符号类型
-        int flag = -1;
         while ((line = buff.readLine()) != null) {
+            int flag = -1;
             // 全部小写
             line = line.toLowerCase();
+
+            int i = 0;
+            while(line.charAt(i) == ' ') i++;
             // 拿到长度
             int len = line.length();
             // 循环统计
-            for (int i = 0; i < len; i++) {
+            for (; i < len; i++) {
                 char c = line.charAt(i);
                 // 当前的nowWord是单词开始的
                 if ((c >= 'a' && c <= 'z') || (c >= '0' && c <= '9') || c == '_') {
@@ -36,17 +41,21 @@ public class Main {
                     nowWord += c;
                     flag = 1;
                     // 当前的nowWord碰到了空格或者换行
-                } else if (c == ' ' || c == '\n') {
+                } else if (c == ' ') {
                     flag = 0;
                     // 当前的nowWord碰到了+ - * / ; >= <=这种运算符
                 } else {
-                    if (flag != -1 && flag != 2 || c == ';') {
+                    if (flag != -1 && flag != 2 || c == ';' || c == '(' || c == ')') {
                         res.add(nowWord);
                         nowWord = "";
                     }
                     nowWord += c;
                     flag = 2;
                 }
+            }
+            if (!nowWord.equals("")) {
+                res.add(nowWord);
+                nowWord = "";
             }
         }
         buff.close();
@@ -74,38 +83,71 @@ public class Main {
                 || str.charAt(0) == '_';
     }
 
-    public static void main(String[] args) throws IOException, Exception {
-
+    public static void checkout(String filePath, int index) throws Exception {
         // 所有的保留字或运算符对应的编码
-        HashMap<String, String > encode = new HashMap<String, String>(){{
-            put("begin","beginsym"); put("call","callsym"); put("const","constsym");
-            put("do", "dosym"); put("end", "endsym");
-            put("if","ifsym"); put("odd","oddsym"); put("procedure","proceduresym");
-            put("read","readsym"); put("then","thensym"); put("var","varsym");
-            put("while","whilesym"); put("write","writesym"); put("+","plus");
-            put("-","minus"); put("*","times"); put("/","slash");
-            put("=","eql"); put("#","neq"); put("<","lss");
-            put("<=","leq"); put(">","gtr"); put(">=","geq");
-            put(":=","becomes"); put("(","lparen"); put(")","rparen");
-            put(",","comma"); put(";","semicolon"); put(".","period");
+        HashMap<String, String> encode = new HashMap<String, String>() {{
+            put("begin", "beginsym");
+            put("call", "callsym");
+            put("const", "constsym");
+            put("do", "dosym");
+            put("end", "endsym");
+            put("if", "ifsym");
+            put("odd", "oddsym");
+            put("procedure", "proceduresym");
+            put("read", "readsym");
+            put("then", "thensym");
+            put("var", "varsym");
+            put("while", "whilesym");
+            put("write", "writesym");
+            put("+", "plus");
+            put("-", "minus");
+            put("*", "times");
+            put("/", "slash");
+            put("=", "eql");
+            put("#", "neq");
+            put("<", "lss");
+            put("<=", "leq");
+            put(">", "gtr");
+            put(">=", "geq");
+            put(":=", "becomes");
+            put("(", "lparen");
+            put(")", "rparen");
+            put(",", "comma");
+            put(";", "semicolon");
+            put(".", "period");
         }};
 
         Main o = new Main();
-        List<String> tmp = o.countReservedWord();
-        for(String str : tmp) {
-            if(encode.containsKey(str)) {
+        List<String> tmp = o.countReservedWord(filePath);
+        BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("out" + index + ".txt", true)));
+        for (String str : tmp) {
+            if (encode.containsKey(str)) {
                 // 仅供实验二参考
                 System.out.printf("(" + "%-10s", encode.get(str) + ",");
+                out.write(str+"\r\n");
             } else {
                 if (o.isNumber(str)) {
                     System.out.print("(number,   ");
-                } else if(o.isVariable(str)) {
+                    out.write(str + "\r\n");
+                } else if (o.isVariable(str)) {
                     System.out.print("(ident,    ");
+                    out.write(str + "\r\n");
                 } else {
                     throw new Exception("格式错误:" + str);
                 }
             }
+
+            out.flush();
             System.out.printf("%10s", str + ")\n");
         }
+        out.close();
+    }
+
+    public static void main(String[] args) throws Exception {
+        checkout("in1.txt", 1);
+        checkout("in2.txt", 2);
+        checkout("in3.txt", 3);
+        checkout("in4.txt", 4);
+        checkout("in5.txt", 5);
     }
 }
