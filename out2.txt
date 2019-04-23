@@ -1,42 +1,42 @@
-var
-x
-,
-y
-;
-procedure
-fun
-;
-var
-a
-,
-b
-,
-c
-;
-begin
-a
-:=
-1
-;
-b
-:=
-2
-;
-c
-:=
-3
-;
-x
-:=
-a
-+
-b
-;
-end
-;
-begin
-call
-fun
-;
-end
-.
+(varsym,        var)
+(ident,           x)
+(comma,           ,)
+(ident,           y)
+(semicolon,       ;)
+(proceduresym,procedure)
+(ident,         fun)
+(semicolon,       ;)
+(varsym,        var)
+(ident,           a)
+(comma,           ,)
+(ident,           b)
+(comma,           ,)
+(ident,           c)
+(semicolon,       ;)
+(beginsym,    begin)
+(ident,           a)
+(becomes,        :=)
+(number,          1)
+(semicolon,       ;)
+(ident,           b)
+(becomes,        :=)
+(number,          2)
+(semicolon,       ;)
+(ident,           c)
+(becomes,        :=)
+(number,          3)
+(semicolon,       ;)
+(ident,           x)
+(becomes,        :=)
+(ident,           a)
+(plus,            +)
+(ident,           b)
+(semicolon,       ;)
+(endsym,        end)
+(semicolon,       ;)
+(beginsym,    begin)
+(callsym,      call)
+(ident,         fun)
+(semicolon,       ;)
+(endsym,        end)
+(period,          .)

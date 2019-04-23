@@ -1,12 +1,12 @@
-package Lexical;
+package Compiler;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.util.*;
 
-public class Main {
+public class Lexical {
 
-    private List<String> countReservedWord(String filePath) throws IOException {
+    public static List<String> countReservedWord(String filePath) throws IOException {
         List<String> res = new LinkedList<>();
         InputStreamReader inputStreamReader;
         try {
@@ -26,7 +26,7 @@ public class Main {
             line = line.toLowerCase();
 
             int i = 0;
-            while(line.charAt(i) == ' ') i++;
+            while (line.charAt(i) == ' ') i++;
             // 拿到长度
             int len = line.length();
             // 循环统计
@@ -68,7 +68,7 @@ public class Main {
         已经保证了输入的变量一定是字母数组下划线才能合成一个string
         所以首位是数字一定是数字串
      */
-    boolean isNumber(String str) {
+    public static boolean isNumber(String str) {
         return str.charAt(0) >= '0' && str.charAt(0) <= '9';
     }
 
@@ -77,13 +77,13 @@ public class Main {
         已经保证了输入的变量一定是字母数组下划线才能合成一个string
         所以只要检测到首位是_或者字母那么一定是变量
      */
-    boolean isVariable(String str) {
+    public static boolean isVariable(String str) {
         // 特判变量或者函数名的首位不能是数字
         return str.charAt(0) >= 'a' && str.charAt(0) <= 'z'
                 || str.charAt(0) == '_';
     }
 
-    public static void checkout(String filePath, int index) throws Exception {
+    static void checkout(String filePath, int index) throws Exception {
         // 所有的保留字或运算符对应的编码
         HashMap<String, String> encode = new HashMap<String, String>() {{
             put("begin", "beginsym");
@@ -117,18 +117,17 @@ public class Main {
             put(".", "period");
         }};
 
-        Main o = new Main();
+        Lexical o = new Lexical();
         List<String> tmp = o.countReservedWord(filePath);
         BufferedWriter out = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("out" + index + ".txt", true)));
         for (String str : tmp) {
             if (encode.containsKey(str)) {
                 // 仅供实验二参考
                 System.out.printf("(" + "%-10s", encode.get(str) + ",");
-                out.write(str+"\r\n");
+                out.write(str + "\r\n");
             } else {
                 if (o.isNumber(str)) {
                     System.out.print("(number,   ");
-                    out.write(str + "\r\n");
                 } else if (o.isVariable(str)) {
                     System.out.print("(ident,    ");
                     out.write(str + "\r\n");
@@ -144,10 +143,10 @@ public class Main {
     }
 
     public static void main(String[] args) throws Exception {
-        checkout("in1.txt", 1);
-        checkout("in2.txt", 2);
-        checkout("in3.txt", 3);
-        checkout("in4.txt", 4);
+//        checkout("in1.txt", 1);
+//        checkout("in2.txt", 2);
+//        checkout("in3.txt", 3);
+//        checkout("in4.txt", 4);
         checkout("in5.txt", 5);
     }
 }

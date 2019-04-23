@@ -1,91 +1,91 @@
-var
-a
-,
-b
-,
-c
-;
-procedure
-sort
-;
-begin
-read
-(
-a
-,
-b
-,
-c
-)
-;
-var
-t
-;
-if
-a
->
-b
-then
-t
-:=
-a
-;
-a
-:=
-b
-;
-b
-:=
-t
-;
-if
-a
->
-c
-then
-t
-:=
-a
-;
-a
-:=
-c
-;
-c
-:=
-t
-;
-if
-b
->
-c
-then
-t
-:=
-b
-;
-b
-:=
-c
-;
-c
-:=
-t
-;
-write
-(
-a
-,
-b
-,
-c
-)
-;
-end
-;
-begin
-call
-sort
-;
-end
-.
+(varsym,        var)
+(ident,           a)
+(comma,           ,)
+(ident,           b)
+(comma,           ,)
+(ident,           c)
+(semicolon,       ;)
+(proceduresym,procedure)
+(ident,        sort)
+(semicolon,       ;)
+(beginsym,    begin)
+(readsym,      read)
+(lparen,          ()
+(ident,           a)
+(comma,           ,)
+(ident,           b)
+(comma,           ,)
+(ident,           c)
+(rparen,          ))
+(semicolon,       ;)
+(varsym,        var)
+(ident,           t)
+(semicolon,       ;)
+(ifsym,          if)
+(ident,           a)
+(gtr,             >)
+(ident,           b)
+(thensym,      then)
+(ident,           t)
+(becomes,        :=)
+(ident,           a)
+(semicolon,       ;)
+(ident,           a)
+(becomes,        :=)
+(ident,           b)
+(semicolon,       ;)
+(ident,           b)
+(becomes,        :=)
+(ident,           t)
+(semicolon,       ;)
+(ifsym,          if)
+(ident,           a)
+(gtr,             >)
+(ident,           c)
+(thensym,      then)
+(ident,           t)
+(becomes,        :=)
+(ident,           a)
+(semicolon,       ;)
+(ident,           a)
+(becomes,        :=)
+(ident,           c)
+(semicolon,       ;)
+(ident,           c)
+(becomes,        :=)
+(ident,           t)
+(semicolon,       ;)
+(ifsym,          if)
+(ident,           b)
+(gtr,             >)
+(ident,           c)
+(thensym,      then)
+(ident,           t)
+(becomes,        :=)
+(ident,           b)
+(semicolon,       ;)
+(ident,           b)
+(becomes,        :=)
+(ident,           c)
+(semicolon,       ;)
+(ident,           c)
+(becomes,        :=)
+(ident,           t)
+(semicolon,       ;)
+(writesym,    write)
+(lparen,          ()
+(ident,           a)
+(comma,           ,)
+(ident,           b)
+(comma,           ,)
+(ident,           c)
+(rparen,          ))
+(semicolon,       ;)
+(endsym,        end)
+(semicolon,       ;)
+(beginsym,    begin)
+(callsym,      call)
+(ident,        sort)
+(semicolon,       ;)
+(endsym,        end)
+(period,          .)

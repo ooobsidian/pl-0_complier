@@ -2,18 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b5c39b9-bace-47c0-bc25-bb3a46f2120d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Grammar/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Compiler/GrammaAnalysis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pl0_complier/Main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pl0_complier/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/in5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/in5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pl0_complier/Grammar/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pl0_complier/Lexical/Main$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/pl0_complier/Lexical/Main.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out1.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out2.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out3.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out4.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lexical/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Grammar/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lexical/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Compiler/Lexical.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,43 +29,83 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Lexical/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/Compiler/GrammaAnalysis.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1056">
-              <caret line="82" column="26" lean-forward="true" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
+            <state relative-caret-position="3526">
+              <caret line="469" column="16" selection-start-line="469" selection-start-column="16" selection-end-line="469" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2352#2353#0" expanded="true" />
+                <element signature="e#6465#6466#0" expanded="true" />
+                <element signature="e#6532#6533#0" expanded="true" />
+                <element signature="e#11911#11912#0" expanded="true" />
+                <element signature="e#14163#14164#0" expanded="true" />
+                <element signature="e#18696#18697#0" expanded="true" />
+                <element signature="e#19466#19467#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/in1.txt">
+        <entry file="file://$PROJECT_DIR$/in5.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="4" />
+            <state>
+              <caret column="13" selection-start-column="13" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/in4.txt">
+        <entry file="file://$PROJECT_DIR$/out5.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+            <state relative-caret-position="60">
+              <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/in3.txt">
+        <entry file="file://$PROJECT_DIR$/src/input.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+            <state>
+              <caret column="5" selection-start-column="5" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Compiler/Lexical.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="222">
+              <caret line="51" selection-start-line="51" selection-end-line="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pl0_complier.iml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Downloads/GrammaAnalysis.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="236">
+              <caret line="30" column="85" selection-start-line="30" selection-start-column="71" selection-end-line="30" selection-end-column="85" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/out1.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -80,6 +123,16 @@
     <findStrings>
       <find>CountIdentifier(filePath);</find>
       <find>result</find>
+      <find>encode</find>
+      <find>getSym</find>
+      <find>表达式</find>
+      <find>-运算符后面未</find>
+      <find>print</find>
+      <find>+ | -运算符后</find>
+      <find>index</find>
+      <find>变量说明</find>
+      <find>while</find>
+      <find>whilesym</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -95,16 +148,27 @@
         <option value="$PROJECT_DIR$/src/ex1/Main.java" />
         <option value="$PROJECT_DIR$/src/in5.txt" />
         <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/Grammar/Main.java" />
         <option value="$USER_HOME$/Downloads/编译2.java" />
-        <option value="$PROJECT_DIR$/out1.txt" />
+        <option value="$PROJECT_DIR$/out2.txt" />
+        <option value="$PROJECT_DIR$/out3.txt" />
+        <option value="$PROJECT_DIR$/out4.txt" />
         <option value="$PROJECT_DIR$/src/Lexical/Main.java" />
+        <option value="$PROJECT_DIR$/src/Grammar/Main.java" />
+        <option value="$PROJECT_DIR$/src/Grammar/Grammar.java" />
+        <option value="$USER_HOME$/Downloads/GrammaAnalysis.java" />
+        <option value="$PROJECT_DIR$/src/Compiler/Lexical.java" />
+        <option value="$PROJECT_DIR$/out1.txt" />
+        <option value="$PROJECT_DIR$/src/Compiler/Grammar.java" />
+        <option value="$PROJECT_DIR$/src/Compiler/GrammaAnalysis.java" />
+        <option value="$PROJECT_DIR$/src/input.txt" />
+        <option value="$PROJECT_DIR$/in5.txt" />
+        <option value="$PROJECT_DIR$/out5.txt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
-    <option name="height" value="849" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -114,7 +178,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -131,19 +195,13 @@
               <item name="pl-0_complier" type="b2602c69:ProjectViewProjectNode" />
               <item name="pl-0_complier" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Grammar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="pl-0_complier" type="b2602c69:ProjectViewProjectNode" />
-              <item name="pl-0_complier" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Lexical" type="462c0819:PsiDirectoryNode" />
+              <item name="Compiler" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -177,9 +235,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Lexical.Main" />
+  <component name="RunManager" selected="Application.Lexical">
+    <configuration name="GrammaAnalysis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Compiler.GrammaAnalysis" />
+      <module name="pl0_complier" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Compiler.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Lexical" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Compiler.Lexical" />
       <module name="pl0_complier" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -187,7 +258,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Lexical" />
+        <item itemvalue="Application.GrammaAnalysis" />
       </list>
     </recent_temporary>
   </component>
@@ -214,32 +286,52 @@
       <workItem from="1555067868801" duration="63000" />
       <workItem from="1555067945858" duration="121000" />
       <workItem from="1555214094598" duration="2596000" />
-      <workItem from="1555293523991" duration="3827000" />
+      <workItem from="1555293523991" duration="4454000" />
+      <workItem from="1555315499031" duration="2000" />
+      <workItem from="1555491651244" duration="808000" />
+      <workItem from="1555493831866" duration="728000" />
+      <workItem from="1555497919983" duration="282000" />
+      <workItem from="1555558072236" duration="95000" />
+      <workItem from="1555570600529" duration="901000" />
+      <workItem from="1555822518818" duration="2000" />
+      <workItem from="1555917062449" duration="6522000" />
+      <workItem from="1556002678325" duration="14112000" />
     </task>
+    <option name="searchClosedTasks" value="true" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36923000" />
+    <option name="totallyTimeSpent" value="61002000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Capture Tool" order="0" />
       <window_info id="Designer" order="1" />
       <window_info id="UI Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.2514409" />
+      <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.18948127" />
       <window_info id="Structure" order="4" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="1" weight="0.3299075" />
+      <window_info anchor="bottom" id="Messages" order="1" weight="0.3292232" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.32982087" />
-      <window_info anchor="bottom" id="Run" order="4" visible="true" weight="0.33538842" />
-      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49927953" weight="0.39827374" />
+      <window_info anchor="bottom" id="Run" order="4" weight="0.21454994" />
+      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49927953" visible="true" weight="0.39827374" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="8" />
+      <window_info anchor="bottom" id="TODO" order="8" weight="0.17632553" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.3292232" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50072044" side_tool="true" weight="0.39827374" />
       <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.49927953" weight="0.3292232" />
@@ -255,95 +347,28 @@
       <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Capture Tool" order="0" />
-      <window_info id="Designer" order="1" />
-      <window_info id="UI Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="3" weight="0.2514409" />
-      <window_info id="Structure" order="4" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info id="Image Layers" order="6" />
-      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="1" weight="0.3299075" />
-      <window_info anchor="bottom" id="Message" order="2" />
-      <window_info anchor="bottom" id="Find" order="3" weight="0.32982087" />
-      <window_info anchor="bottom" id="Run" order="4" weight="0.33538842" />
-      <window_info active="true" anchor="bottom" id="Debug" order="5" visible="true" weight="0.39827374" />
-      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32953104" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="right" id="Maven" order="0" />
-      <window_info anchor="right" id="Maven Projects" order="1" />
-      <window_info anchor="right" id="Palette&#9;" order="2" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Palette" order="6" />
-      <window_info anchor="right" id="Commander" order="7" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Compiler/Lexical.java</url>
+          <line>149</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="jar:///usr/lib/jvm/java/jdk1.8.0_181/src.zip!/java/util/Locale.java" />
     <entry file="jar:///usr/lib/jvm/java/jdk1.8.0_181/src.zip!/java/util/HashSet.java" />
     <entry file="jar:///usr/lib/jvm/java/jdk1.8.0_181/src.zip!/java/lang/String.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/io/FileOutputStream.java" />
-    <entry file="file://$PROJECT_DIR$/out5.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="6" lean-forward="true" selection-start-column="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/in5.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/in2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="11" column="4" selection-end-line="11" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/in4.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/in3.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output1.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out4.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-306" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out3.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1312" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/output1.txt" />
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/src.zip!/java/lang/AbstractStringBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -375,18 +400,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/out2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-181" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/in1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
@@ -394,23 +407,160 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Grammar/Main.java">
+    <entry file="file://$USER_HOME$/Downloads/PL0语言语法法分析器/PL0语法分析器(递归子程序法).cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="380">
+          <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/src/Parsing.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2356">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out4.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1720">
+          <caret line="86" column="20" selection-end-line="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out3.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1740">
+          <caret line="87" column="20" selection-end-line="92" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="31" column="17" selection-end-line="41" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/in4.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/in2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="4" selection-end-line="11" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/in1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="4" selection-end-line="6" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/in3.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="18" column="7" selection-end-line="25" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/GrammaAnalysis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="30" column="85" selection-start-line="30" selection-start-column="71" selection-end-line="30" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/GrammaAnalysis(1).java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/out1.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lexical/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1056">
-          <caret line="82" column="26" lean-forward="true" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
+        <state relative-caret-position="600">
+          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Compiler/Grammar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2352#2353#0" expanded="true" />
+            <element signature="e#6766#6767#0" expanded="true" />
+            <element signature="e#6833#6834#0" expanded="true" />
+            <element signature="e#9597#9598#0" expanded="true" />
+            <element signature="e#9621#9622#0" expanded="true" />
+            <element signature="e#9706#9707#0" expanded="true" />
+            <element signature="e#9730#9731#0" expanded="true" />
+            <element signature="e#11958#11959#0" expanded="true" />
+            <element signature="e#11982#11983#0" expanded="true" />
+            <element signature="e#16491#16492#0" expanded="true" />
+            <element signature="e#16515#16516#0" expanded="true" />
+            <element signature="e#17261#17262#0" expanded="true" />
+            <element signature="e#17285#17286#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/in5.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Compiler/Lexical.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pl0_complier.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out5.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Compiler/GrammaAnalysis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3526">
+          <caret line="469" column="16" selection-start-line="469" selection-start-column="16" selection-end-line="469" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#6465#6466#0" expanded="true" />
+            <element signature="e#6532#6533#0" expanded="true" />
+            <element signature="e#11911#11912#0" expanded="true" />
+            <element signature="e#14163#14164#0" expanded="true" />
+            <element signature="e#18696#18697#0" expanded="true" />
+            <element signature="e#19466#19467#0" expanded="true" />
           </folding>
         </state>
       </provider>

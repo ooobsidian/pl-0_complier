@@ -1,93 +1,93 @@
-var
-m
-,
-n
-,
-r
-,
-q
-;
-procedure
-gcd
-;
-begin
-while
-r
-#
-0
-do
-begin
-q
-:=
-m
-/
-n
-;
-r
-:=
-m
--
-q
-*
-n
-;
-m
-:=
-n
-;
-n
-:=
-r
-;
-end
-;
-end
-;
-begin
-read
-(
-m
-)
-;
-read
-(
-n
-)
-;
-if
-m
-<
-n
-then
-begin
-r
-:=
-m
-;
-m
-:=
-n
-;
-n
-:=
-r
-;
-end
-;
-begin
-r
-:=
-1
-;
-call
-gcd
-;
-write
-(
-m
-)
-;
-end
-;
-end
-.
+(varsym,        var)
+(ident,           m)
+(comma,           ,)
+(ident,           n)
+(comma,           ,)
+(ident,           r)
+(comma,           ,)
+(ident,           q)
+(semicolon,       ;)
+(proceduresym,procedure)
+(ident,         gcd)
+(semicolon,       ;)
+(beginsym,    begin)
+(whilesym,    while)
+(ident,           r)
+(neq,             #)
+(number,          0)
+(dosym,          do)
+(beginsym,    begin)
+(ident,           q)
+(becomes,        :=)
+(ident,           m)
+(slash,           /)
+(ident,           n)
+(semicolon,       ;)
+(ident,           r)
+(becomes,        :=)
+(ident,           m)
+(minus,           -)
+(ident,           q)
+(times,           *)
+(ident,           n)
+(semicolon,       ;)
+(ident,           m)
+(becomes,        :=)
+(ident,           n)
+(semicolon,       ;)
+(ident,           n)
+(becomes,        :=)
+(ident,           r)
+(semicolon,       ;)
+(endsym,        end)
+(semicolon,       ;)
+(endsym,        end)
+(semicolon,       ;)
+(beginsym,    begin)
+(readsym,      read)
+(lparen,          ()
+(ident,           m)
+(rparen,          ))
+(semicolon,       ;)
+(readsym,      read)
+(lparen,          ()
+(ident,           n)
+(rparen,          ))
+(semicolon,       ;)
+(ifsym,          if)
+(ident,           m)
+(lss,             <)
+(ident,           n)
+(thensym,      then)
+(beginsym,    begin)
+(ident,           r)
+(becomes,        :=)
+(ident,           m)
+(semicolon,       ;)
+(ident,           m)
+(becomes,        :=)
+(ident,           n)
+(semicolon,       ;)
+(ident,           n)
+(becomes,        :=)
+(ident,           r)
+(semicolon,       ;)
+(endsym,        end)
+(semicolon,       ;)
+(beginsym,    begin)
+(ident,           r)
+(becomes,        :=)
+(number,          1)
+(semicolon,       ;)
+(callsym,      call)
+(ident,         gcd)
+(semicolon,       ;)
+(writesym,    write)
+(lparen,          ()
+(ident,           m)
+(rparen,          ))
+(semicolon,       ;)
+(endsym,        end)
+(semicolon,       ;)
+(endsym,        end)
+(period,          .)
