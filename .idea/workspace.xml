@@ -2,21 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b5c39b9-bace-47c0-bc25-bb3a46f2120d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Compiler/GrammaAnalysis.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/in5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/in5.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pl0_complier/Grammar/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pl0_complier/Lexical/Main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pl0_complier/Lexical/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out4.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out5.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Grammar/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lexical/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Compiler/Lexical.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Compiler/GrammaAnalysis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Compiler/GrammaAnalysis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/input.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,35 +22,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Compiler/GrammaAnalysis.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3526">
-              <caret line="469" column="16" selection-start-line="469" selection-start-column="16" selection-end-line="469" selection-end-column="16" />
+            <state relative-caret-position="479">
+              <caret line="291" column="9" selection-start-line="291" selection-start-column="9" selection-end-line="291" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#6465#6466#0" expanded="true" />
-                <element signature="e#6532#6533#0" expanded="true" />
-                <element signature="e#11911#11912#0" expanded="true" />
-                <element signature="e#14163#14164#0" expanded="true" />
-                <element signature="e#18696#18697#0" expanded="true" />
-                <element signature="e#19466#19467#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/in5.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="13" selection-start-column="13" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/out5.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -70,32 +35,15 @@
         <entry file="file://$PROJECT_DIR$/src/input.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="5" selection-start-column="5" selection-end-column="5" />
+              <caret column="16" selection-start-column="16" selection-end-column="16" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Compiler/Lexical.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="51" selection-start-line="51" selection-end-line="51" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pl0_complier.iml">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Downloads/GrammaAnalysis.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
+            <state relative-caret-position="580">
               <caret line="30" column="85" selection-start-line="30" selection-start-column="71" selection-end-line="30" selection-end-column="85" />
             </state>
           </provider>
@@ -133,6 +81,9 @@
       <find>变量说明</find>
       <find>while</find>
       <find>whilesym</find>
+      <find>常量定义</find>
+      <find>Var</find>
+      <find>var</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -159,10 +110,10 @@
         <option value="$PROJECT_DIR$/src/Compiler/Lexical.java" />
         <option value="$PROJECT_DIR$/out1.txt" />
         <option value="$PROJECT_DIR$/src/Compiler/Grammar.java" />
-        <option value="$PROJECT_DIR$/src/Compiler/GrammaAnalysis.java" />
-        <option value="$PROJECT_DIR$/src/input.txt" />
         <option value="$PROJECT_DIR$/in5.txt" />
         <option value="$PROJECT_DIR$/out5.txt" />
+        <option value="$PROJECT_DIR$/src/Compiler/GrammaAnalysis.java" />
+        <option value="$PROJECT_DIR$/src/input.txt" />
       </list>
     </option>
   </component>
@@ -178,7 +129,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -201,6 +151,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -235,7 +186,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Lexical">
+  <component name="RunManager" selected="Application.GrammaAnalysis">
     <configuration name="GrammaAnalysis" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Compiler.GrammaAnalysis" />
       <module name="pl0_complier" />
@@ -258,8 +209,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Lexical" />
         <item itemvalue="Application.GrammaAnalysis" />
+        <item itemvalue="Application.Lexical" />
       </list>
     </recent_temporary>
   </component>
@@ -295,13 +246,14 @@
       <workItem from="1555570600529" duration="901000" />
       <workItem from="1555822518818" duration="2000" />
       <workItem from="1555917062449" duration="6522000" />
-      <workItem from="1556002678325" duration="14112000" />
+      <workItem from="1556002678325" duration="15174000" />
+      <workItem from="1556091181947" duration="745000" />
     </task>
     <option name="searchClosedTasks" value="true" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61002000" />
+    <option name="totallyTimeSpent" value="62809000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -319,7 +271,7 @@
       <window_info id="Capture Tool" order="0" />
       <window_info id="Designer" order="1" />
       <window_info id="UI Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.18948127" />
+      <window_info content_ui="combo" id="Project" order="3" weight="0.19236311" />
       <window_info id="Structure" order="4" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Image Layers" order="6" />
@@ -327,8 +279,8 @@
       <window_info anchor="bottom" id="Messages" order="1" weight="0.3292232" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.32982087" />
-      <window_info anchor="bottom" id="Run" order="4" weight="0.21454994" />
-      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49927953" visible="true" weight="0.39827374" />
+      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.37114674" />
+      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49927953" weight="0.39827374" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="8" weight="0.17632553" />
@@ -347,6 +299,38 @@
       <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Capture Tool" order="0" />
+      <window_info id="Designer" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info content_ui="combo" id="Project" order="3" visible="true" weight="0.19236311" />
+      <window_info id="Structure" order="4" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Image Layers" order="6" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="1" weight="0.3292232" />
+      <window_info anchor="bottom" id="Message" order="2" />
+      <window_info anchor="bottom" id="Find" order="3" weight="0.32982087" />
+      <window_info anchor="bottom" id="Run" order="4" weight="0.37114674" />
+      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49927953" weight="0.39827374" />
+      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="8" weight="0.17632553" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3292232" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50072044" side_tool="true" weight="0.39827374" />
+      <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.49927953" weight="0.3292232" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="right" id="Maven" order="0" />
+      <window_info anchor="right" id="Maven Projects" order="1" />
+      <window_info anchor="right" id="Palette&#9;" order="2" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette" order="6" />
+      <window_info anchor="right" id="Commander" order="7" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -359,6 +343,14 @@
           <line>149</line>
           <properties />
           <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Compiler/GrammaAnalysis.java</url>
+          <line>267</line>
+          <properties class="Compiler.GrammaAnalysis" method="constExpression">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -472,13 +464,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/GrammaAnalysis.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="30" column="85" selection-start-line="30" selection-start-column="71" selection-end-line="30" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/GrammaAnalysis(1).java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="481">
@@ -486,52 +471,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/out1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Compiler/Grammar.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="54" column="18" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6766#6767#0" expanded="true" />
-            <element signature="e#6833#6834#0" expanded="true" />
-            <element signature="e#9597#9598#0" expanded="true" />
-            <element signature="e#9621#9622#0" expanded="true" />
-            <element signature="e#9706#9707#0" expanded="true" />
-            <element signature="e#9730#9731#0" expanded="true" />
-            <element signature="e#11958#11959#0" expanded="true" />
-            <element signature="e#11982#11983#0" expanded="true" />
-            <element signature="e#16491#16492#0" expanded="true" />
-            <element signature="e#16515#16516#0" expanded="true" />
-            <element signature="e#17261#17262#0" expanded="true" />
-            <element signature="e#17285#17286#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/input.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" selection-start-column="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/in5.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Compiler/Grammar.java" />
     <entry file="file://$PROJECT_DIR$/src/Compiler/Lexical.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
+        <state relative-caret-position="980">
           <caret line="51" selection-start-line="51" selection-end-line="51" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -542,6 +485,20 @@
     <entry file="file://$PROJECT_DIR$/pl0_complier.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$USER_HOME$/Downloads/GrammaAnalysis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="580">
+          <caret line="30" column="85" selection-start-line="30" selection-start-column="71" selection-end-line="30" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/out5.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -549,18 +506,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/in5.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Compiler/GrammaAnalysis.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3526">
-          <caret line="469" column="16" selection-start-line="469" selection-start-column="16" selection-end-line="469" selection-end-column="16" />
+        <state relative-caret-position="479">
+          <caret line="291" column="9" selection-start-line="291" selection-start-column="9" selection-end-line="291" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#6465#6466#0" expanded="true" />
-            <element signature="e#6532#6533#0" expanded="true" />
-            <element signature="e#11911#11912#0" expanded="true" />
-            <element signature="e#14163#14164#0" expanded="true" />
-            <element signature="e#18696#18697#0" expanded="true" />
-            <element signature="e#19466#19467#0" expanded="true" />
           </folding>
         </state>
       </provider>

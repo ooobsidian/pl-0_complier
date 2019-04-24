@@ -95,7 +95,7 @@ public class GrammaAnalysis {
     }
 
     //    private static final String cur_directory = "D:\\编译原理\\Compiler\\src\\TestInstance\\";
-    private static final String cur_directory = "src/input5.txt";
+    private static final String cur_directory = "src/input.txt";
     //    private static final String input_filename="InputText\\input2.txt";
 //    private static final String conditionTest_filename="ConditionTest\\test1.txt";
 //    private static final String expressionTest_filename="ExpressionTest\\test1.txt";
@@ -265,7 +265,7 @@ public class GrammaAnalysis {
 
 
     // <常量说明部分> const<常量定义>{,<常量定义>};
-    private int constExpression() {
+    private void constExpression() {
         if (sym.equals("constsym")) {
             getSym();
             constDefinition();
@@ -273,17 +273,23 @@ public class GrammaAnalysis {
             while (sym.equals("comma")) {
                 getSym();
                 constDefinition();
+                getSym();
             }
         } else {
             System.out.println("常量说明需要\'const\'进行声明");
             System.exit(1);
         }
-        getSym();
+        if (sym_index != tokenList.size()) {
+            if (!sym.equals("semicolon")) {
+                System.out.println("常量定义缺少分号结束");
+                System.exit(1);
+            }
+            return;
+        }
         if (!sym.equals("semicolon")) {
             System.out.println("常量定义缺少分号结束");
             System.exit(1);
         }
-        return 0;
     }
 
     // <常量定义> ::= <id> = <integer>
