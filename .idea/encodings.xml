@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$USER_HOME$/Downloads/GrammaAnalysis(1).java" charset="GB2312" />
     <file url="file://$USER_HOME$/Downloads/PL0语言语法法分析器/PL0语法分析器(递归子程序法).cpp" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/test/case04.txt" charset="UTF-8" />
   </component>
 </project>

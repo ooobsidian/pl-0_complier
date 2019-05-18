@@ -5,7 +5,7 @@ import java.util.*;
 
 /*
  * @program: Compiler
- * @description: 实验三-语法分析
+ * @description: 实验三-语法分析 实验四-语义分析（表达式）
  * @author: xw
  * @create: 2019-04-11 14:57
  **/
@@ -51,6 +51,7 @@ public class GrammaAnalysis {
     private static String sym;  //用于遍历输入的词法分析结果的每个编码
     private static int sym_index = 0;     //遍历tokenList的索引
     private static int bracketsFlag = 0; //用于判断左右括号是否搭配：当flag>0右括号缺失；当flag<0右括号缺失
+    private static List<ArrayList<String>> MorphologyWordList = new ArrayList<>();
 
     private GrammaAnalysis() {
         tokenList = new ArrayList<>();
@@ -95,7 +96,7 @@ public class GrammaAnalysis {
     }
 
     //    private static final String cur_directory = "D:\\编译原理\\Compiler\\src\\TestInstance\\";
-    private static final String cur_directory = "src/input.txt";
+    private static final String cur_directory = "/Users/obsidian/source/pl-0_complier/src/test/case06.txt";
     //    private static final String input_filename="InputText\\input2.txt";
 //    private static final String conditionTest_filename="ConditionTest\\test1.txt";
 //    private static final String expressionTest_filename="ExpressionTest\\test1.txt";
@@ -148,7 +149,7 @@ public class GrammaAnalysis {
                     nowWord += c;
                     flag = 1;
                     // 当前的nowWord碰到了空格或者换行
-                } else if (c == ' ' || c == '\n') {
+                } else if (c == ' ' || c == '\n' || c == '\t') {
                     flag = 0;
                     // 当前的nowWord碰到了+ - * / ; >= <=这种运算符
                 } else {
@@ -166,6 +167,7 @@ public class GrammaAnalysis {
             if (!nowWord.equals("")) {
                 res.add(nowWord);
                 nowWord = "";
+                flag = -1;
             }
         }
         buff.close();
@@ -446,6 +448,12 @@ public class GrammaAnalysis {
         }
     }
 
+    // 判断下一个开始的是不是一个语句
+    private boolean isSentence() {
+        return sym.equals("ident") || sym.equals("ifsym") || sym.equals("whilesym")
+                || sym.equals("callsym") || sym.equals("readsym") || sym.equals("writesym")
+                || sym.equals("beginsym");
+    }
 
     // <赋值语句> ::= <标识符> := <表达式>
     private void identExpression() {
@@ -477,8 +485,13 @@ public class GrammaAnalysis {
                 getSym();
             }
             if (!sym.equals("endsym")) {
-                System.out.println("begin缺少end");
-                System.exit(1);
+                if (isSentence()) {
+                    System.out.println("缺少分号");
+                    System.exit(1);
+                } else {
+                    System.out.println("begin语句缺少end结尾");
+                    System.exit(1);
+                }
             }
         }
     }
@@ -505,7 +518,8 @@ public class GrammaAnalysis {
     // <表达式> ::= [+|-]<项>{<加法运算符><项>}
     // 外层，主要用于判断括号的问题
     private void expression() {
-        exp();
+        int result = exp();
+        System.out.println("最终结果为：" + result);
         if (bracketsFlag != 0) {
             System.out.println("括号出错");
             System.exit(1);
@@ -513,7 +527,9 @@ public class GrammaAnalysis {
     }
 
     // 内层
-    private void exp() {
+    private Integer exp() {
+        String op;
+        Integer arg1, arg2, result;
         if (sym.equals("plus") || sym.equals("minus")) { //处理 [+|-]
             getSym();
             if (predictmap.get(sym).equals("opt") || predictmap.get(sym).equals("delimiter")) {
@@ -521,34 +537,46 @@ public class GrammaAnalysis {
                 System.exit(1);
             }
         }
-        term();
+        arg1 = term();
         //{<加法运算符><项>}
         getSym();
         boolean intoWhile = false;
         while (sym.equals("plus") || sym.equals("minus")) {
+            op = sym;
             intoWhile = true;
             if (sym_index >= tokenList.size()) {
                 System.out.println("[+|-]后没有计算符号");
                 System.exit(1);
             }
             getSym();
-            term();
+            arg2 = term();
+            if (op.equals("plus")) {
+                result = arg1 + arg2;
+                arg1 = result;
+            } else {
+                result = arg1 - arg2;
+                arg1 = result;
+            }
             getSym();
             intoWhile = false;
         }
         if (!intoWhile) {
             sym_index--;
         }
+        return arg1;
     }
 
     // <项> ::= <因子>{<乘法运算符><因子>}
     // 表达式的儿子
-    private void term() {
-        factor();     //处理<因子>
+    private Integer term() {
+        String op;
+        Integer arg1, arg2, result;
+        arg1 = factor();     //处理<因子>
         getSym();
         //{<乘法运算符><因子>}
         boolean intoWhile = false;
         while (sym.equals("times") || sym.equals("slash")) {
+            op = sym;
             intoWhile = true;
             getSym();
             if (sym.equals("times") || sym.equals("slash") ||
@@ -556,33 +584,47 @@ public class GrammaAnalysis {
                 System.out.println("<项>里面出现多余的运算符号");
                 System.exit(1);
             }
-            factor();
+            arg2 = factor();
+            if (op.equals("times")) {
+                result = arg1 * arg2;
+                arg1 = result;
+            } else {
+                if (arg2 == 0) {
+                    System.out.print("除数不能为0");
+                    System.exit(1);
+                }
+                result = arg1 / arg2;
+                arg1 = result;
+            }
             getSym();
             intoWhile = false;
         }
         if (!intoWhile) {
             sym_index--;
         }
+        return arg1;
     }
 
     // <因子> ::= <标识符>|<无符号整数>| ‘(’<表达式>‘)’
     // 项的儿子
-    private void factor() {
+    private Integer factor() {
+        Integer arg = 0;
         //<标识符>
         switch (sym) {
             case "ident":
-                if (sym_index == tokenList.size()) return;
+                if (sym_index == tokenList.size()) return null;
                 break;
             //<无符号整数>
             case "number":
-                if (sym_index == tokenList.size()) return;
+                if (sym_index == tokenList.size()) return null;
+                arg = Integer.parseInt(MorphologyWordList.get(sym_index - 1).get(0));
                 break;
             //‘(’<表达式>‘)’
             case "lparen":   //‘(’
                 bracketsFlag++;
                 System.out.println(bracketsFlag);
                 getSym();
-                exp();  //<表达式>
+                arg = exp();  //<表达式>
                 getSym();
                 if (sym.equals("rparen")) { //‘)’
                     System.out.println(sym_index + " " + bracketsFlag);
@@ -593,7 +635,7 @@ public class GrammaAnalysis {
                     System.out.println("缺少右括号");
                     System.exit(1);
                 }
-                if (sym_index == tokenList.size()) return;
+                if (sym_index == tokenList.size()) return null;
                 break;
             case "rparen":
                 System.out.println("错误使用右括号");
@@ -602,6 +644,7 @@ public class GrammaAnalysis {
                 System.out.println("+ | -运算符后面未跟数字或标识符");
                 System.exit(1);
         }
+        return arg;
     }
 
 
@@ -720,45 +763,38 @@ public class GrammaAnalysis {
     }
 
 
+    private void start() {
+        getSym();
+        subprogram();
+        if (sym_index < tokenList.size() - 1) {
+            System.out.println("分程序的语句只能有一条（如需多条请使用嵌套写法）");
+            System.exit(1);
+        }
+        getSym();
+        if (!sym.equals("period")) {
+            System.out.println("程序结束缺少.");
+            System.exit(1);
+        }
+        System.out.println(sym_index);
+        System.out.println("语法正确无误");
+    }
+
     //========================================================================
     public static void main(String[] args) throws Exception {
         GrammaAnalysis grammaAnalysis = new GrammaAnalysis();
-        List<ArrayList<String>> MorphologyWordList =
+        MorphologyWordList =
                 grammaAnalysis.getMorphologyWord(grammaAnalysis.countReservedWord());
         //获得词法分析列表tokenList
-        System.out.println(MorphologyWordList.size());
-        for (ArrayList<String> a : MorphologyWordList) {
-            System.out.println(a);
-        }
+//        System.out.println(MorphologyWordList.size());
+//        for (ArrayList<String> a : MorphologyWordList) {
+//            System.out.println(a);
+//        }
         for (ArrayList<String> MorphologyWord : MorphologyWordList) {
             tokenList.add(MorphologyWord.get(1));
         }
-        System.out.print(tokenList);
-
-        grammaAnalysis.getSym();
+//        System.out.print(tokenList);
         // 程序入口
-        grammaAnalysis.subprogram();
-        System.out.println(sym_index);
-        System.out.println("语法正确无误");
-        //表达式测试
-//        if (grammaAnalysis.expression() == 0) {
-////            if(bracketsFlag != 0) {
-////                System.out.println("括号出错");
-////                System.exit(1);
-////            }
-//            System.out.println(sym_index);
-//            System.out.println("语法正确");
-//        }
-
-//        //赋值测试
-//        if(grammaAnalysis.identExpression() == 0){
-//            System.out.println("语法正确");
-//        }
-
-        //条件表达式测试
-//        if(grammaAnalysis.conditionExpression() == 0){
-//            System.out.println("语法正确");
-//        }
+        grammaAnalysis.start();
 
     }
 
