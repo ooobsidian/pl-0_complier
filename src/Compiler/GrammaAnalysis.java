@@ -45,6 +45,7 @@ public class GrammaAnalysis {
         put(",", "comma");
         put(";", "semicolon");
         put(".", "period");
+
     }};
     private static Map<String, String> predictmap;
     private static ArrayList<String> tokenList = new ArrayList<>();   //存储词法分析结果得到的编码

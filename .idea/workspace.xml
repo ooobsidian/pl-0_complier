@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/Compiler/GrammaAnalysis.java" line="298" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="3b5c39b9-bace-47c0-bc25-bb3a46f2120d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/case06.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pl0_complier/Compiler/GrammaAnalysis.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/pl0_complier/Compiler/GrammaAnalysis.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/pl0_complier/input.txt" beforeDir="false" />
+=======
       <change beforePath="$PROJECT_DIR$/src/Compiler/GrammaAnalysis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Compiler/GrammaAnalysis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/input.txt" beforeDir="false" />
+>>>>>>> c038d6b39b84bca4bbf726b8be4b3f9f739a6fc3
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -71,8 +71,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Compiler/GrammaAnalysis.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="766" selection-start-line="766" selection-end-line="766" />
+<<<<<<< HEAD
+            <state relative-caret-position="9964">
+              <caret line="784" column="8" selection-start-line="784" selection-start-column="8" selection-end-line="784" selection-end-column="8" />
+=======
+            <state relative-caret-position="567">
+              <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
+>>>>>>> c038d6b39b84bca4bbf726b8be4b3f9f739a6fc3
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -84,6 +89,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/case06.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state>
+<<<<<<< HEAD
               <caret column="22" selection-start-column="22" selection-end-column="22" />
             </state>
           </provider>
@@ -133,6 +139,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="280">
               <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+=======
+              <caret column="10" selection-start-column="10" selection-end-column="10" />
+>>>>>>> c038d6b39b84bca4bbf726b8be4b3f9f739a6fc3
             </state>
           </provider>
         </entry>
@@ -140,6 +149,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/in5.txt">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state>
               <caret column="13" selection-start-column="13" selection-end-column="13" />
             </state>
@@ -160,6 +170,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
               <caret line="18" column="7" selection-end-line="25" selection-end-column="4" />
+=======
+            <state relative-caret-position="810">
+              <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+>>>>>>> c038d6b39b84bca4bbf726b8be4b3f9f739a6fc3
             </state>
           </provider>
         </entry>
@@ -226,18 +240,30 @@
         <option value="$PROJECT_DIR$/in5.txt" />
         <option value="$PROJECT_DIR$/out5.txt" />
         <option value="$PROJECT_DIR$/src/input.txt" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/input4.txt" />
         <option value="$PROJECT_DIR$/src/case01.txt" />
         <option value="$PROJECT_DIR$/src/case04.txt" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/860e8c64-ac31-4f2b-91ae-1f76c4936577/console_1.sql" />
         <option value="$PROJECT_DIR$/src/test/case06.txt" />
+=======
+>>>>>>> c038d6b39b84bca4bbf726b8be4b3f9f739a6fc3
         <option value="$PROJECT_DIR$/src/Compiler/GrammaAnalysis.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+<<<<<<< HEAD
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="x" value="726" />
     <option name="width" value="714" />
     <option name="height" value="900" />
+=======
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
+>>>>>>> c038d6b39b84bca4bbf726b8be4b3f9f739a6fc3
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -276,6 +302,10 @@
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
+=======
+      <pane id="PackagesPane" />
+>>>>>>> c038d6b39b84bca4bbf726b8be4b3f9f739a6fc3
       <pane id="Scope" />
     </panes>
   </component>
@@ -375,6 +405,7 @@
       <workItem from="1555917062449" duration="6522000" />
       <workItem from="1556002678325" duration="15174000" />
       <workItem from="1556091181947" duration="745000" />
+<<<<<<< HEAD
       <workItem from="1556253222394" duration="8000" />
       <workItem from="1556270038072" duration="295000" />
       <workItem from="1556431774242" duration="2876000" />
@@ -385,13 +416,20 @@
       <workItem from="1557381433104" duration="553000" />
       <workItem from="1557734989124" duration="113000" />
       <workItem from="1558194861593" duration="1023000" />
-      <workItem from="1558195920185" duration="1861000" />
+      <workItem from="1558195920185" duration="1957000" />
+=======
+      <workItem from="1556174051468" duration="189000" />
+>>>>>>> c038d6b39b84bca4bbf726b8be4b3f9f739a6fc3
     </task>
     <option name="searchClosedTasks" value="true" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72920000" />
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="73016000" />
+=======
+    <option name="totallyTimeSpent" value="62998000" />
+>>>>>>> c038d6b39b84bca4bbf726b8be4b3f9f739a6fc3
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -403,12 +441,21 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="714" height="900" extended-state="0" />
+<<<<<<< HEAD
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+=======
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+>>>>>>> c038d6b39b84bca4bbf726b8be4b3f9f739a6fc3
     <layout>
       <window_info id="Capture Tool" order="0" />
       <window_info id="Designer" order="1" />
       <window_info id="UI Designer" order="2" />
+<<<<<<< HEAD
       <window_info content_ui="combo" id="Project" order="3" weight="0.22205438" />
+=======
+      <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.14658849" />
+>>>>>>> c038d6b39b84bca4bbf726b8be4b3f9f739a6fc3
       <window_info id="Structure" order="4" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Image Layers" order="6" />
@@ -417,11 +464,11 @@
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.3292232" />
       <window_info anchor="bottom" id="Run" order="4" weight="0.20098643" />
-      <window_info active="true" anchor="bottom" id="Debug" order="5" sideWeight="0.49927953" visible="true" weight="0.35881627" />
+      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49927953" weight="0.35881627" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="8" weight="0.17632553" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3292232" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3292232" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50072044" side_tool="true" weight="0.39827374" />
       <window_info anchor="bottom" id="Version Control" order="11" sideWeight="0.49927953" weight="0.3292232" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
@@ -485,21 +532,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Compiler/GrammaAnalysis.java</url>
-          <line>619</line>
-          <properties />
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Compiler/GrammaAnalysis.java</url>
-          <line>784</line>
-          <properties />
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Compiler/GrammaAnalysis.java</url>
+<<<<<<< HEAD
           <line>796</line>
           <properties />
           <option name="timeStamp" value="18" />
+=======
+          <line>268</line>
+          <properties class="Compiler.GrammaAnalysis" method="constExpression">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="14" />
+>>>>>>> c038d6b39b84bca4bbf726b8be4b3f9f739a6fc3
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -528,60 +571,12 @@
     <entry file="jar:///usr/lib/jvm/java/jdk1.8.0_181/src.zip!/java/lang/String.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_162/src.zip!/java/io/FileOutputStream.java" />
     <entry file="file://$PROJECT_DIR$/output1.txt" />
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/src.zip!/java/lang/AbstractStringBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="66" selection-start-line="66" selection-end-line="66" />
-          <folding>
-            <element signature="e#1327#1328#0" expanded="true" />
-            <element signature="e#1369#1370#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/src.zip!/java/lang/StringBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="89" selection-start-line="89" selection-end-line="89" />
-          <folding>
-            <element signature="e#2871#2872#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/编译2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="655" column="16" selection-start-line="655" selection-start-column="16" selection-end-line="655" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/PL0语言语法法分析器/PL0语法分析器(递归子程序法).cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/src/Parsing.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2356">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/src.zip!/java/lang/AbstractStringBuilder.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/src.zip!/java/lang/StringBuilder.java" />
+    <entry file="file://$USER_HOME$/Downloads/编译2.java" />
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/src.zip!/java/lang/String.java" />
+    <entry file="file://$USER_HOME$/Downloads/PL0语言语法法分析器/PL0语法分析器(递归子程序法).cpp" />
+    <entry file="file://$USER_HOME$/Downloads/src/Parsing.java" />
     <entry file="file://$PROJECT_DIR$/out4.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1720">
@@ -670,6 +665,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/in5.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -678,12 +674,18 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/in4.txt">
+=======
+    <entry file="file://$USER_HOME$/Downloads/GrammaAnalysis(1).java" />
+    <entry file="file://$PROJECT_DIR$/src/Compiler/Grammar.java" />
+    <entry file="file://$PROJECT_DIR$/src/Compiler/Lexical.java">
+>>>>>>> c038d6b39b84bca4bbf726b8be4b3f9f739a6fc3
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="4" />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/in3.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -699,6 +701,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/case06.txt">
+=======
+    <entry file="file://$PROJECT_DIR$/pl0_complier.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/GrammaAnalysis.java" />
+    <entry file="file://$PROJECT_DIR$/out5.txt">
+>>>>>>> c038d6b39b84bca4bbf726b8be4b3f9f739a6fc3
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="22" selection-start-column="22" selection-end-column="22" />
@@ -712,6 +721,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/Compiler/Lexical.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1020">
@@ -719,16 +729,37 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
+=======
     <entry file="file://$PROJECT_DIR$/src/Compiler/GrammaAnalysis.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="766" selection-start-line="766" selection-end-line="766" />
+        <state relative-caret-position="567">
+          <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="10" selection-start-column="10" selection-end-column="10" />
+>>>>>>> c038d6b39b84bca4bbf726b8be4b3f9f739a6fc3
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="9964">
+          <caret line="784" column="8" selection-start-line="784" selection-start-column="8" selection-end-line="784" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+=======
+        <state relative-caret-position="810">
+          <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+>>>>>>> c038d6b39b84bca4bbf726b8be4b3f9f739a6fc3
         </state>
       </provider>
     </entry>
